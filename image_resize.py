@@ -13,6 +13,9 @@ def resize(image_file, height, width):
 
 def resize_all_images(height = 400, width = 340):
     for f in os.listdir('Images'):
+        if image == '.DS_Store':
+                continue
+                
         images = os.listdir('Images/' + f)
         for image in images:
             if image == '.DS_Store':
